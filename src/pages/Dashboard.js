@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "../components/AuthForms";
 import { useAuth } from "../context/auth";
 
-function Admin(props) {
+function Dashboard(props) {
   const { setAuthTokens } = useAuth();
 
   function logOut() {
@@ -11,10 +11,10 @@ function Admin(props) {
 
   return (
     <div>
-      <div>Admin Page</div>
+      <div>Dashboard</div>
       <Button onClick={logOut}>Log out</Button>
     </div>
   );
 }
 
-export default Admin;
+export default Dashboard;

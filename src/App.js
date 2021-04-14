@@ -2,9 +2,9 @@ import React ,{useState} from "react";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import AuthLayout from './AuthLayout';
 import Home from "./pages/Home";
-import Admin from "./pages/Admin";
+import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import Register from "./pages/Register";
 
 import { AuthContext } from "./context/auth";
 
@@ -26,14 +26,14 @@ function App(props) {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/Admin">Admin</Link>
+              <Link to="/dashboard">Dashboard</Link>
             </li>
           </ul>
         </nav>
         <Route exact path="/" component={Home} />
           <Route path="/login" component={Login} />
-          <Route path="/signup" component={Signup} />
-          <AuthLayout path="/admin" component={Admin} />        </div>
+          <Route path="/register" component={Register} />
+          <AuthLayout path="/dashboard" component={Dashboard} />        </div>
       </Router>
     </AuthContext.Provider>
   );

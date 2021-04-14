@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import { Link,useHistory } from "react-router-dom";
 import { Card, Form, Error,Input, Button } from '../components/AuthForms';
 
-function Signup() {
+function Register() {
   const [userName,setUserName] = useState('');
   const [password,setPassword] = useState('');
   const [rePassword,setRePassword] = useState('');
@@ -36,4 +36,4 @@ function Signup() {
   );
 }
 
-export default Signup;
+export default Register;
